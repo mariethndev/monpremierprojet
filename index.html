@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta description est le petit
+    texte descriptif en dessous du lien dans la recherche du
+    moteur de recherche. -->
+    <meta name="description" content="Mon premier site">
+    <!-- Meta keyword est ignoré à cause d'abus. -->
+    <meta name="keywards" content="jambon viande saucisse">
+    <!-- width=device-width => le site s'adapte automatiquement
+     à l'écran du périphérique.
+     initial-scale => zoom de 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="VotreFormateurFavoris">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mon premier site</title>
+</head>
+<body>
+
+    <!-- Le titre d'un site. -->
+    <h1>Le titre de mon premier site</h1>
+
+    <!-- Paragraphie d'un site. -->
+    <p>Ceci est un paragraphe.</p>
+    <p><b>Mon texte est en gras.</b></p>
+
+    <!-- Cette écriture est obselète. -->
+    <p><strong>Ecriture</strong></p>
+
+    <!-- La balise i est utilisée pour les icones!!!! -->
+    <p><i>Mon texte en italique</i></p>
+
+    <!-- Pour écrire en italique privilégier la balise EM -->
+    <p><em>Italique ?</em></p>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- A NE PLUS UTILISER !!!!!! -->
+    <p>GROS PASSAGE A LA LIGNE!!!!!</p>
+
+    <p><del>Mon texte est barré</del></p>
+    <!-- STRIKE EST OBSELETE -->
+     
+    <p><u>Mon texte est surligné.</u></p>
+    <!-- U POUR UNDERLINE -->
+
+    <!-- <marquee behavior="" direction="">test</marquee> -->
+
+    <hr>
+
+    <h2>Les listes</h2>
+
+    <h3>Liste ordonnées</h3>
+
+    <ol>
+        <li>texte 1</li>
+    </ol>
+
+    <h3>Liste à puces</h3>
+
+    <ul>
+        <li>Jambon</li>
+        <li>Merguez</li>
+        <li>Chipolata</li>
+        <li>Saucisse blanche</li>
+        <li>Chorizo</li>
+    </ul>
+
+    <!-- li = list item -->
+
+<hr>
+
+<h2>La balise image</h2>
+<img src="https://images-ext-1.discordapp.net/external/Bc3el0oKxr-UbhbhG1YDvxP-udM1w27ppob7Y7qkLbU/https/image.jimcdn.com/app/cms/image/transf/dimension%3D402x10000%3Aformat%3Dgif/path/s5dde8bff85c81b2f/image/i20e9b588f957c774/version/1451330273/animal-3d-autruche.gif" alt="autruche" width="450px">
+
+<br>
+
+<img width="100px" src="https://images-ext-1.discordapp.net/external/Bc3el0oKxr-UbhbhG1YDvxP-udM1w27ppob7Y7qkLbU/https/image.jimcdn.com/app/cms/image/transf/dimension%3D402x10000%3Aformat%3Dgif/path/s5dde8bff85c81b2f/image/i20e9b588f957c774/version/1451330273/animal-3d-autruche.gif" alt="autruche en 3d plus petite">
+
+<hr>
+
+<h2>Les tableaux</h2>
+
+<table>
+    <!-- La balise suivante est optionnelle -->
+    <thead>
+    <!-- <tr> alias table row déclare une ligne
+    dans le tableau -->
+        <tr>
+            <!-- <th> déclare une colonne mais dans l'entête
+            du tableau -->
+            <th>Nom</th>
+            <th>Age</th>
+            <th>Pays</th>
+        </tr>
+    </thead>
+
+    <!-- tbody est obligatoire -->
+
+    <tbody>
+        <!-- Première ligne du tableau -->
+        <tr>
+            <td>Carmen</td>
+            <td>33 ans</td>
+            <td>Espagne</td>
+        </tr>
+
+        <!-- Deuxième ligne du tableau -->
+        <tr>
+            <td>Michelle</td>
+            <td>26 ans</td>
+            <td>USA</td>
+        </tr>
+
+        <!-- Troisième ligne du tableau -->
+        <tr>
+            <td>François</td>
+            <td>43 ans</td>
+            <td>France</td>
+        </tr>
+    </tbody>
+
+    <!-- Le pied du tableau est optionnel -->
+    <tfoot>
+        <tr>
+            <th>Nom</th>
+            <th>Age</th>
+            <th>Pays</th>
+        </tr>
+    </tfoot>
+</table>
+
+<br>
+
+<table>
+    <!-- ENTETE -->
+    <thead>
+        <tr>
+            <th>Nom de l'élève</th>
+            <th>Matière</th>
+            <th>Note</th>
+        </tr>
+    </thead>
+
+    <!-- CORP ET CONTENU -->
+    <tbody>
+        <tr>
+            <td rowspan="3">
+                David
+            </td>
+            <td>Maths</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>Physique</td>
+            <td>18</td>
+        </tr>
+
+        <tr>
+            <td>Informatique</td>
+            <td>14</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">
+                Alex
+            </td>
+            <td>Maths</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td>Physique</td>
+            <td>14.5</td>
+        </tr>
+
+        <tr>
+            <td>Informatique</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table>
+    <thead>
+        <th colspan="3">Bingo de la muerte</th>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>William Shatner 93 ans</td>
+            <td>Line Renaud 96 ans</td>
+            <td>Philippe Bouvard 94 ans</td>
+        </tr>
+        <tr>
+            <td>Bernadette Chirac 91 ans</td>
+            <td>Renaud Séchan 72 ans</td>
+            <td>Clint Eastwood 94 ans</td>
+            <td>Yoko Ono 91 ans</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<!-- EXERCICE VIVIEN -->
+
+<!-- rowspan = fusion de ligne && colspan = fusion de colonne -->
+<!-- th met en gras ! 
+On peut en mettre où l'on veut -->
+
+<table>
+    <thead>
+        <caption>
+            Un tablal test avec des cellules fusionnées
+            (des animaux)
+        </caption>
+
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Moyenne</th>
+            <th rowspan="2">Yeux bleus</th>
+        </tr>
+
+        <tr>
+            <th>Hauteur</th>
+            <th>Poids</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Chiens</th>
+            <td>0.6</td>
+            <td>12</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <th>Chats</th>
+            <td>0.3</td>
+            <td>4</td>
+            <td>40%</td>
+         </tr>
+    </tbody>
+</table>
+
+<!-- 
+    tr>th+td*3 
+-->
+
+<br>
+
+    <div class="table-wrapper">
+        <table id="table-100w">
+            <tbody>
+                <caption>Tableau du malheur</caption>
+                <tr>
+                    <td>1</td>
+                    <td colspan="2">2</td>
+                    <td rowspan="2">3</td>
+                    <td colspan="2" rowspan="2">4</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">5</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td colspan="2">9</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">11</td>
+                    <td colspan="3">12</td>
+                    <td rowspan="7">13</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">19</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">20</td>
+                    <td colspan="2">21</td>
+                </tr>
+
+                <tr>
+                    <td colspan="5">22</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">23</td>
+                    <td colspan="2">24</td>
+                    <td>25</td>
+                    <td>26</td>
+                </tr>
+
+                <tr>
+                    <td>27</td>
+                    <td colspan="2">28</td>
+                    <td>29</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

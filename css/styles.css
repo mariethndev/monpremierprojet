@@ -1,0 +1,19 @@
+table, th, td {
+    border: solid 1px rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 2px;
+    text-align: center;
+}
+
+/* L'écriture de classe ou d'id sont au format Kebabcase */
+
+.table-wrapper {
+    width: 50%;
+}
+
+/* Une classe peut être appelée autant de fois que l'on veut,
+l'id on l'utilise qu'une fois */
+
+#table-100w {
+    width: 100%;
+}
