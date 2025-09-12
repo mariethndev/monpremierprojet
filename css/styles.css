@@ -17,3 +17,7 @@ l'id on l'utilise qu'une fois */
 #table-100w {
     width: 100%;
 }
+
+textarea {
+    resize: none;
+}
