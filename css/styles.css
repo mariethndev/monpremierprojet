@@ -1,5 +1,5 @@
 table, th, td {
-    border: solid 1px rgb(0, 0, 0);
+    border: solid 1px rgb(128, 41, 41);
     border-collapse: collapse;
     padding: 2px;
     text-align: center;
@@ -21,3 +21,47 @@ l'id on l'utilise qu'une fois */
 textarea {
     resize: none;
 }
+
+ 
+h1 {
+    /* Color: la couleur du texte */
+    color: #5f0a10;
+    /* text-align: aligment du texte */
+    text-align: center;
+    /* Couleur de l'arrière plan */
+    background-color: #c34949;
+    /* Padding : Marge intérieur de l'élément */
+    padding: 10px;
+    /* text-decoration : soulignage du texte */
+    text-decoration: underline;
+}
+
+/* le > selectionne l'nfant direct de l'élément */
+#liste_cours > li {
+    /* list-style: none permet la désactivation des puces */
+    list-style: none;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border: solid 1px #960825;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #4E0110;
+}
+
+#liste_cours > li:hover {
+    background-color: #c34949;
+}
+
+#liste_cours > li > a {
+    text-decoration: none;
+    color: rgb(251, 232, 232);
+}
+
+#liste_cours > li > a:hover {
+    background-color: #cd5050;
+    color: rgb(82, 27, 27);
+}
+
+
