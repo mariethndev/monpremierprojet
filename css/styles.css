@@ -22,8 +22,7 @@ textarea {
     resize: none;
 }
 
- 
-h1 {
+.titre_base {
     /* Color: la couleur du texte */
     color: #5f0a10;
     /* text-align: aligment du texte */
@@ -36,7 +35,13 @@ h1 {
     text-decoration: underline;
 }
 
-/* le > selectionne l'nfant direct de l'élément */
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* le > selectionne l'enfant direct de l'élément */
 #liste_cours > li {
     /* list-style: none permet la désactivation des puces */
     list-style: none;
@@ -64,4 +69,111 @@ h1 {
     color: rgb(82, 27, 27);
 }
 
+   /* ___ ___  _   _ ___  ___    ___ ___ ___ 
+  / __/ _ \| | | | _ \/ __|  / __/ __/ __|
+ | (_| (_) | |_| |   /\__ \ | (__\__ \__ \
+  \___\___/ \___/|_|_\|___/  \___|___/___/
+                                           */
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+}
+
+/* Pour faire un cercle en css il faut un carré au départ. */
+
+.round {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text-color-red {
+    color: red;
+}
+
+/* Si on met une div en inline, sachant que l'inline ne gère
+pas la hauteur ni la largeur, on ne la verra pas, l'inline
+est utilisé principalement pour du texte. */
+
+.cobaye {
+    display: inline;
+}
+
+/* L'inline block autorise la hauteur et la largeur, permet
+aussi d'accumuler les éléments sur la longueur et de passer
+à la ligne quand l'élément n'a plus de place. */
+
+.cobaye2 {
+    display: inline-block;
+}
+
+/* /!\ le display inline n'accepte que du texte. */
+
+body {
+    min-height: 100vh;
+}
+
+/*  100vh = 100% de l'écran */
+
+.nav-bar {
+    background-color: darkslateblue;
+    width: 100%;
+    height: 10vh;
+    /* Line-height permet au texte à l'intérieur de la div,
+    d'être centré verticalement. Il faut mettre la même
+    hauteur de la div. (height) */
+    line-height: 10vh;
+}
+
+.nav-bar-list > li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-bar-list > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar-list > li > a:hover {
+    color: orange;
+}
+
+.nav-bar-list {
+    text-align: start;
+}
+
+.parent > p {
+    color: green;
+}
+
+.all-children-parent p {
+    color: red;
+}
+
+h4 + p {
+    /* Attention le h4 est en gras par défaut */
+    /* Pour mettre en gras */
+    font-weight: bold;
+    color: blue;
+}
+
+h5 ~ p {
+   font-weight: bold;
+    color: orangered;
+}
 
