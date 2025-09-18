@@ -1,0 +1,123 @@
+ /* Couleurs */
+  .red { background-color: #e74c3c; }
+  .blue { background-color: #3498db; }
+  .green { background-color: #2ecc71; }
+  .orange { background-color: #f39c12; }
+  .purple { background-color: #9b59b6; }
+  .teal { background-color: #1abc9c; }
+  .pink { background-color: #ff6b81; }
+  .brown { background-color: #8e44ad; }
+  .gray { background-color: #7f8c8d; }
+
+body {
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    background-color: #fff;
+    border: dashed 2px #ccc;
+    gap: 1rem;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.force-height {
+    height: 500px;
+}
+
+/* TP flex 1 */
+
+.main {
+    display: flex;
+    height: 75vh;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.block-h40 {
+    display: flex;
+    gap: 1rem;
+    height: 40%;
+    width: 100%;
+    background-color: rgb(255, 120, 147);
+}
+
+.block-h50 {
+    height: 50%;
+    width: 100%;
+    background-color: coral;
+}
+
+.block-h60 {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 60%;
+}
+
+/* Les 2 blocs ci-dessous ont une taille de 100% de hauteur 
+du parent, c'est de .main qui est de 40% */
+
+.block-w20 {
+    height: 100%;
+    width: 20%;
+}
+
+.block-w50 {
+    height: 100%;
+    width: 50%;
+}
+
+.block-w80 {
+    height: 100%;
+    width: 80%;
+    background-color: #af2266;
+}
+
+.block-orange {
+    background-color: yellow;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+

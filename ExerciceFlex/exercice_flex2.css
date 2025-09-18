@@ -1,0 +1,183 @@
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#flex {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    width: 10%;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    gap: 1rem;
+}
+
+.nav {
+    width: 70%;
+    height: 3vh;
+    background-color: blueviolet;
+    flex-wrap: wrap;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-center {
+    display: flex;
+    background-color: crimson;
+    width: 55vh;
+    height: 35vh;
+}
+
+.menu-top {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.top {
+    background-color: pink;
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dash {
+    background-color: rgb(66, 208, 227);
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.activ {
+    background-color: rgb(225, 121, 68);
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.kan {
+    background-color: rgb(69, 224, 134);
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.report {
+    background-color: rgb(213, 152, 61);
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.param2 {
+    background-color: pink;
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+ul > li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+.home {
+    background-color: cadetblue;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.projets {
+    background-color: blue;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.stats {
+    background-color: green;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.task {
+    background-color: orange;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.team {
+    background-color: red;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.docs {
+    background-color: pink;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.param {
+    background-color: greenyellow;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.bar-search {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    height: 3vh;
+}
+
+.search {
+    width: 20%;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+    background-color:orange;
+    gap: 1rem;
+}
+
+input {
+    background-color: rgb(249, 214, 149);
+    width: 35%;
+    border: none;
+}
+
+.btn-blue {
+    background-color: aqua;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-green {
+    background-color: rgb(94, 255, 0);
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    background-color: rgb(122, 81, 183);
+    padding: 3px;
+}
