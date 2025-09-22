@@ -1,0 +1,387 @@
+:root{
+    --blue-ocean: #1f6feb;
+    --violet: #8b5cf6;
+    --cyan: #38bdf8;
+    --green-acid: #22c55e;
+    --yellow-dijon: #f59e0b;
+    --crimson: #ef4444;
+    --violet-pink: #ec4899;
+}
+
+.blue-ocean {
+    background-color: var(--blue-ocean);
+}
+
+.violet {
+    background-color: var(--violet);
+}
+
+.cyan {
+    background-color: var(--cyan);
+}
+
+.green-acid {
+    background-color: var(--green-acid);
+}
+
+.yellow-dijon {
+    background-color: var(--yellow-dijon);
+}
+
+.crimson {
+    background-color: var(--crimson);
+}
+
+.violet-pink {
+    background-color: var(--violet-pink);
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    gap: 0.5rem;
+}
+
+/* HEADER */
+
+header{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.logo {
+    background-color: var(--blue-ocean);
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: var(--violet);
+    height: 100%;
+    width: 70%;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+nav > p {
+    padding-left: 1rem;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem
+}
+
+nav > ul > li {
+    /* On applique la même valeur aux quatres cotés */
+    /* padding: 0.4rem; */
+
+    /* vertical | horizontal  */
+    padding: 0.4rem 0.8rem;
+
+    /* Haut | Horizontal | Bas  */
+    /* padding: 0.4rem 0.5rem 0.8rem; */
+
+    /* Haut | Droit | Bas | Gauche  */
+    /* padding: 0.4rem 0.5rem 0.8rem 0.6rem; */
+
+    border-radius: 20px;
+}
+
+.search {
+    background-color: var(--yellow-dijon);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.search > button {
+    padding: 0.2rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.search > input[type="search"] {
+    padding: 0.5rem 0;
+    width: 30%;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.search > input[type="search"]::placeholder {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+/* On ajoute un before pour le premier element de type <button> 
+qui se trouve dans un élément de classe search */
+.search > button:first-of-type::before {
+    content: "+ ";
+}
+
+
+
+/* MAIN */
+main{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu {
+    height: 100%;
+    width: 15%;
+}
+
+.menu > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+}
+
+.menu > ul > li {
+    width: calc(100% - 1.2rem);
+    padding: 0.8rem 0.5rem;
+    border-radius: 10px;
+}
+
+.board {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.container-board-header {
+    display: flex;
+    height: 7%;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.board-header {
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--yellow-dijon);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.board-header > p {
+    margin-left: 1rem;
+}
+
+.stat {
+    border-radius: 10px;
+    width: calc(40%/3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tasks {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.to-do {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.work-in-progress {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.done {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.h10{
+    height: 10%;
+    border-radius: 10px;
+}
+
+.h20 {
+    height: 20%;
+    border-radius: 10px;
+}
+
+.h30 {
+    height: 30%;
+    border-radius: 10px;
+}
+
+.h10, .h20, .h30 {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.task-11 {
+    width: 20%;
+}
+
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    height: 25%;
+    width: 100%;
+    gap: 0.5rem
+}
+
+.numbers > div {
+    width: calc(25% - 0.4rem);
+    height: calc(100%/3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jambon-beurre {
+    margin-top: 1rem;
+    display: flex;
+    height: 18%;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.jambon, .beurre, .haut{
+    width: calc(100% / 3);
+    border-radius: 10px;
+}
+
+.jambon {
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.beurre {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    align-self: flex-end;
+}
+
+.haut {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+aside{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile {
+    background-color: var(--violet);
+    height: 10%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.img-profile {
+    background-color: var(--cyan);
+    height: 75%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.profile > button {
+    padding: 0.2rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.widget {
+    height: 7.5%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.widget > p {
+    padding: 0.7rem;
+}
+
+/* FOOTER */
+
+footer{
+    height: 5%;
+    width: 100%;
+    background-color: var(--violet);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p:first-of-type {
+    padding-left: 1rem;
+}
+
+footer p:last-of-type {
+    padding-right: 1rem;
+}
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Correction_flex/style.css">
+    <title>Correction TP Flexbox</title>
+</head>
+<body>
+
+    <!-- Méthodologie
+    1. Décomposer l'image 
+    -->
+
+    <!-- Body en flex column -->
+
+
+        <header>
+            <div class="logo"><p>Logo</p></div>
+            <nav></nav>
+            <search class="search"></search>
+        </header>
+
+        <main>
+            <div class="menu">
+                <ul>
+                    <li>Menu top</li>
+                    <li>Dashboard</li>
+                    <li>Activité</li>
+                    <li>Kanban</li>
+                    <li>Reporting</li>
+                    <li>Paramètres</li>
+                </ul>
+            </div>
+
+            <div class="board">
+                <!-- Board en flex column -->
+                <div class="container-board-header">
+                    <div class="bord-header"></div>
+                    <div class="stat"></div>
+                    <div class="stat"></div>
+                    <div class="stat"></div>
+                </div>
+
+                <div class="tasks">
+                    <!-- task en column -->
+                    <div class="to-do">
+                        <p>A faire</p>
+                            <div>
+                                <p>Tâche 1</p>
+                                <p>Tâche 2</p>
+                                <p>Tâche 3</p>
+                                <p>Tâche 4</p>
+                            </div>
+                    </div>
+
+                    <!-- task en column -->
+
+                    <div class="work-in-progress">
+                           <p>En cours</p> 
+                           <div>
+                                <p>Tâche 5</p>
+                           </div>
+                           <div>
+                                <p>Tâche 6</p>
+                           </div>
+                           <div>
+                                <p>Tâche 7</p>
+                           </div>
+                           <div>
+                                <p>Tâche 8</p>
+                           </div>
+                    </div>
+
+                    <!-- task en column -->
+                    <div class="done">
+                        <div>
+                            <p>Terminé</p>
+                        </div>
+
+                        <div>
+                            <p>Tâche 9</p>
+                        </div>
+                        <div>
+                            <p>Tâche 10</p>
+                        </div>
+                        <div>
+                            <p>Tâche 11</p>
+                        </div>
+                        <div>
+                            <p>Tâche 12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="numbers">
+                    <!-- 
+                    (div>p{$})*12
+                    flex wrap -->
+                    <div>
+                        <p>1</p>
+                    </div>
+                    <div>
+                        <p>2</p>
+                    </div>
+                    <div>
+                        <p>3</p>
+                    </div>
+                    <div>
+                        <p>4</p>
+                    </div>
+                    <div>
+                        <p>5</p>
+                    </div>
+                    <div>
+                        <p>6</p>
+                    </div>
+                    <div>
+                        <p>7</p>
+                    </div>
+                    <div>
+                        <p>8</p>
+                    </div>
+                    <div>
+                        <p>9</p>
+                    </div>
+                    <div>
+                        <p>10</p>
+                    </div>
+                    <div>
+                        <p>11</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                    </div>
+                </div>
+
+                <div class="jambon-beurre">
+                    <div class="jambon">
+                        <p>Jambon</p>
+                    </div>
+
+                    <div>
+                        <p>Beurre</p>
+                    </div>
+
+                    <div>
+                        <p>Haut</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+
+                <!-- Quelque chose qui a aucun rapport avec le concept du site -->  
+                <!-- Flex column -->
+
+                <div class="profile">
+                    <div class="img-profilte"></div>
+                    <div class="info-profile">
+                        <p>PROFIL</p>
+                        <p>Nom</p>
+                        <p>Prénom</p>
+
+                        <button>Suivre</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Wiget1</p>
+                </div>
+                <div>
+                    <p>Wiget2</p>
+                </div>
+                <div>
+                    <p>Wiget3</p>
+                </div>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p></p>
+            <p></p>
+        </footer>
+    
+</body>
+</html>
