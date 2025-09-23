@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Vibes";
+    src: url("../fonts/GreatVibes-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5vh;
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.h3, h4 {
+    text-decoration: underline;
+}
+
+p {
+    margin-left: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.static {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: static;
+}
+
+.relative {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: relative;
+    top: 2rem;
+    left: 3rem;
+}
+
+.absolute-orphan {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(23, 232, 103);
+    position: absolute;
+    top: 120%;
+    left: 50%;
+}
+
+.container-relative > img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-30%, 0%);
+}
+
+.flex-overflow {
+    display: flex;
+    justify-content: center;
+}
+
+.overflow {
+    /* overflow créer une fenêtre et tout ce qui
+    trop petit ne sera pas affiché dans l'overflow */
+    overflow: hidden;
+    /* Vérouille la fenêtre */
+    border-radius: 10px;
+    width: 30vh;
+    aspect-ratio: 1/1.5;
+    position: relative;
+}
+
+.title-product {
+    font-family: "Vibes", sans-serif;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    /* z-index ne fonctionne que sur les éléments
+    positionnés */
+    z-index: 10;
+    margin: 0;
+    top: 10%;
+    left: 10%;
+    text-wrap: nowrap;
+    background-color: rgba(250, 235, 215, 0.7);
+    /* 
+    toujours de 0 à 1 pour le a (transparence) 
+    */
+    padding: 0.1rem;
+    border-radius: 10px;
+}
+
+.title-product p {
+    margin: 0;
+}
+
+.fixed-element {
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    /* Mettre tjrs un top, ou un bottom même si il
+    est égal à 0 */
+    top: 0;
+    z-index: 11;
+}
+
+.sticky {
+    height: 20vh;
+    width: 10%;
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+
