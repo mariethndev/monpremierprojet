@@ -2,12 +2,6 @@
     margin: 0;
     padding: 0;
 }
-.root {
-    --bg: #f4f1ea;
-    --primary: #8bc34a;
-    --accent: #795548;
-    --text: #333;
-}
 
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -36,7 +30,7 @@ ul > li {
 
 header {
     background-color: #fce9ba;
-    height: 20vh;
+    height: 30vh;
 }
 
 header > a {
@@ -57,7 +51,8 @@ header > a {
     gap: 1rem;
     flex-wrap: wrap;
     width: 100%;
-    height: 120vh;
+    height: 100%;
+    margin: 20px;
 }
 
 .header-flex {
@@ -78,6 +73,12 @@ img {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.autruche-card {
+    margin: 0;
+    color: #795548;
+    padding: 10px;
 }
 
 h2 {
