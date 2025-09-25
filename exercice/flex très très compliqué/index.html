@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../exercice/flex très très compliqué/styles.css">
+    <title>Super exo flex</title>
+</head>
+<body>
+    <!-- Body flex colllllllllllllllllllllumn -->
+
+        <header>
+            <div class="logo">
+                <p>.Logo</p>
+            </div>
+            <nav>
+                <p>.Nav (en Wrap)</p>
+                <ul>
+                    <li class="cyan">Accueil</li>
+                    <li class="cyan">Projets</li>
+                    <li class="green-acid">Stats</li>
+                    <li class="yellow-dijon">Tâches</li>
+                    <li class="crimson">Equipe</li>
+                    <li class="violet-pink">Docs</li>
+                    <li class="cyan">Paramêtres</li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="search" placeholder="Recherche...">
+                <button class="cyan">Nouveau</button>
+                <button class="green-acid">Exporter</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="menu">
+                <ul>
+                    <li class="violet-pink">.Menu-top</li>
+                    <li class="cyan">Dashboard</li>
+                    <li class="green-acid">Activité</li>
+                    <li class="crimson">Kanban</li>
+                    <li class="cyan">Reporting</li>
+                    <li class="green-acid">Paramètres</li>
+                </ul>
+            </div>
+
+            <div class="board">
+            <!-- Board flex colllllllllllllllllllllumn -->
+                <div class="container-board-header">
+                    <div class="board-header"><p>Header</p></div>
+                    <div class="stat crimson"><p>Stat A</p></div>
+                    <div class="stat violet-pink"><p>Stat B</p></div>
+                    <div class="stat cyan"><p>Stat C</p></div>
+                </div>
+                <div class="tasks">
+                    <div class="to-do">
+                        <!-- flex colllllllllllllllllllllumn -->
+                         <div class="violet h10">
+                            <p>A faire</p>
+                        </div>
+                         <!-- (div>p{Tâche $})*4 -->
+                         <div class="cyan h20">
+                            <p>Tâche 1</p>
+                         </div>
+                         <div class="green-acid h30">
+                            <p>Tâche 2</p>
+                         </div>
+                         <div class="violet-pink h20">
+                            <p>Tâche 3</p>
+                         </div>
+                         <div class="cyan h20">
+                            <p>Tâche 4</p>
+                         </div>
+                    </div>
+                    <div class="work-in-progress">
+                        <!-- flex colllllllllllllllllllllumn -->
+
+                        <div class="yellow-dijon h10">
+                            <p>En cours</p>
+                        </div>
+                        <!--(div>p{Tâche $@5})*4-->
+
+                        <div class="cyan h20">
+                            <p>Tâche 5</p>
+                        </div>
+                        <div class="violet-pink h20">
+                            <p>Tâche 6</p>
+                        </div>
+                        <div class="cyan h30">
+                            <p>Tâche 7</p>
+                        </div>
+                        <div class="green-acid h20">
+                            <p>Tâche 8</p>
+                        </div>
+                        
+
+                    </div>
+                    <div class="done">
+                        <!-- flex colllllllllllllllllllllumn -->
+                         <div class="blue-ocean h10">
+                            <p>Terminé</p>
+                        </div>
+                             <div class="yellow-dijon h20">
+                                <p>Tâche 9</p>
+                             </div>
+                             <div class="crimson h20">
+                                <p>Tâche 10</p>
+                             </div>
+                             <div class="violet-pink h20 task-11">
+                                <p>Tâche 11</p>
+                             </div>
+                             <div class="cyan h30">
+                                <p>Tâche 12</p>
+                             </div>
+
+                    </div>
+                </div>
+                <div class="numbers">
+                    <!-- (div>p{$})*12 -->
+                     <!-- flex wrap -->
+                    <div class="blue-ocean">
+                        <p>1</p>
+                    </div>
+                    <div class="violet">
+                        <p>2</p>
+                    </div>
+                    <div class="cyan">
+                        <p>3</p>
+                    </div>
+                    <div class="green-acid">
+                        <p>4</p>
+                    </div>
+                    <div class="yellow-dijon">
+                        <p>5</p>
+                    </div>
+                    <div class="crimson">
+                        <p>6</p>
+                    </div>
+                    <div class="violet-pink">
+                        <p>7</p>
+                    </div>
+                    <div class="cyan">
+                        <p>8</p>
+                    </div>
+                    <div class="violet">
+                        <p>9</p>
+                    </div>
+                    <div class="yellow-dijon">
+                        <p>10</p>
+                    </div>
+                    <div class="cyan">
+                        <p>11</p>
+                    </div>
+                    <div class="green-acid">
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="jambon-beurre">
+                    <div class="jambon violet">
+                        <p>Jambon</p>
+                    </div>
+                    <div class="beurre cyan">
+                        <p>Beurre</p>
+                    </div>
+                    <div class="haut green-acid">
+                        <p>Haut</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <!-- Flex collumn -->
+                 <div class="profile">
+                    <div class="img-profile"></div>
+                    <div class="info-profile">
+                        <p>PROFILE</p>
+                        <p>Nom</p>
+                        <p>Prenom</p>
+                    </div>
+                    <button class="green-acid">Suivre</button>
+                 </div>
+                 <div class="widget yellow-dijon">
+                    <p>Widget 1</p>
+                 </div>
+                 <div class="widget crimson">
+                    <p>Widget 2</p>
+                 </div>
+                 <div class="widget violet-pink">
+                    <p>Widget 3</p>
+                 </div>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Votre Formateur Adoré@ 2024 -- En Flex Uniquement (N'est ce pas Alexandre)</p>
+            <p>Fabriqué avec des div</p>
+        </footer>
+    
+</body>
+</html>

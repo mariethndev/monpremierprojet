@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le CSS</title>
+    <link rel="stylesheet" href="../cours/css/styles.css">
+</head>
+<body>
+    
+    <h1>CSS : Cascade style sheet ou feuille de style en cascade</h1>
+
+    <h2>Les blocks</h2>
+
+    <!-- Par défaut une div n'a pas de taille, elle prend
+     sa taille par rapport à ce qu'elle contient -->
+
+    <div class="green square"></div>
+    <div class="orange square"></div>
+    <div class="blue square round"></div>
+
+    <p>Les div, à chaque fois qu'on les appelle, passent
+    à la ligne -> elles sont par défaut en display : block.
+    </p>
+
+    <p>La balise p, elle-même est en display:block</p>
+
+    <p>La balise <span class="text-color-red">span</span>, est en display:span <span class="text-color-red">inline</span></p>
+
+    <div class="cobaye blue square"></div>
+
+    <div class="cobaye2 blue square"></div>
+    <div class="cobaye2 green square"></div>
+    <div class="cobaye2 orange square"></div>
+
+    <!-- Exemple d'une navbar -->
+
+    <div class="nav-bar">
+        <ul class="nav-bar-list">
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">Promo</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+<!-- Sans le # à un a le lien n'est plus actif -->
+
+<hr>
+
+<h2>Les combinateurs</h2>
+<p>Permettent de cibler des éléments HTML en fonction de leur relation
+avec d'autres éléments.</p>
+
+<p>Imaginons deux éléments HTML E et F</p>
+
+<ol>
+    <li>Enfants direct : <code>E > F</code></li>
+    <li>Tous les enfants : <code>E F</code></li>
+    <li>Les Frateries adjacents : <code>E + F</code></li>
+    <!-- celui qui est après direct -->
+    <li>Tous les frères : <code>E ~ F</code></li>
+</ol>
+
+<hr>
+
+<h3>1. Enfants direct</h3>
+<div class="parent">
+    <p>Enfant direct</p>
+    <div>
+        <p>Petit enfant de parent</p>
+    </div>
+</div>
+
+<hr>
+
+<h3>2. Tous les enfants</h3>
+<div class="all-children-parent">
+    <p>Enfant direct</p>
+    <div>
+        <p>Petit enfant de parent</p>
+    </div>
+</div>
+
+<hr>
+
+<h3>3. Fraterie Adjacente</h3>
+
+<h4>Titre Frère</h4>
+<p>Frères1</p>
+<p>Frères2</p>
+<p>Frères3</p>
+
+<hr>
+
+<h3>4. Tous les frères</h3>
+
+<h5>Titre frère très petit</h5>
+<p>Frères1</p>
+<p>Frères2</p>
+<p>Frères3</p>
+
+<hr>
+
+<h2>Les pseudos éléments</h2>
+
+<div>
+    <p> 
+        Un pseudo-élément CSS est un mot-clé ajouté à un sélecteur 
+        qui permet de mettre en forme une partie spécifique du ou
+        des éléments sélectionnés.
+    </p>
+</div>
+
+<!-- Dès qu'on écrit un selecteur en css il est en jaune -->
+
+<div>
+    <p class="text-chiant">
+    Ô merveilles ineffables des pseudo-sélecteurs CSS ! 
+    Sublimes artisans de la précision et de la grâce, ils transforment la simple feuille de style en une symphonie visuelle, une fresque numérique où chaque élément s’incline devant leur puissance. 
+    Grâce à eux, le banal devient extraordinaire : un simple lien 
+    s’embrase au survol tel un phénix renaissant, une première lettre 
+    se dresse avec la majesté d’une initiale enluminée, et les 
+    moindres recoins d’une liste prennent vie sous la caresse 
+    raffinée de leurs enchantements. Véritables alchimistes du web, 
+    les pseudo-sélecteurs transforment le code en poésie et l’écran 
+    en cathédrale de lumière. 
+    Louons à jamais ces prodiges discrets, qui font vibrer l’âme de 
+    chaque site avec l’éclat du sublime !
+    </p>
+
+    <a id="super-button" href="#">Liker moi</a>
+
+</div>
+
+<br>
+<hr>
+
+<h4>Exercice CSS</h4>
+
+<div class="container">
+    <div>
+        <h1>Titre principal</h1>
+        <p>Paragraphe 1</p>
+    </div>
+
+    <div class="blox">
+        <h2>Sous-titre</h2>
+        <p>Paragraphe 2</p>
+        <span>Span dans .box</span>
+    </div>
+
+    <p>Paragraphe 3</p>
+    <span>Span général</span>
+
+    <div class="box">
+        <p>Paragraphe 4</p>
+        <h2>Sous-titre 2</h2>
+        <span>Autre span</span>
+    </div>
+</div>
+
+<hr>
+
+
+
+
+</body>
+</html>

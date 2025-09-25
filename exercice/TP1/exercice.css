@@ -1,0 +1,62 @@
+ /* Couleurs */
+  .red { background-color: #e74c3c; }
+  .blue { background-color: #3498db; }
+  .green { background-color: #2ecc71; }
+  .orange { background-color: #f39c12; }
+  .purple { background-color: #9b59b6; }
+  .teal { background-color: #1abc9c; }
+  .pink { background-color: #ff6b81; }
+  .brown { background-color: #8e44ad; }
+  .gray { background-color: #7f8c8d; }
+
+body {
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    background-color: #fff;
+    border: dashed 2px #ccc;
+    gap: 1rem;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.force-height {
+    height: 500px;
+}
