@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-royale {
+    width: 20%;
+    height: 30%;
+    background-color: #fff8e1;
+    padding: 2%;
+    border-radius: 2%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.flex > .king {
+    font-size: 2rem;
+}
+
+.camelus {
+    color: #7b5e3b;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}
+
+img {
+    width: 40%;
+    height: 60%;
+    border-radius: 50%;
+    border: 5px solid #7b5e3b;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10%;
+}
+
+.card-1 {
+    background-color: #fff3cd;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    border: 1px solid #7b5e3b;
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+
+.card-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-txt {
+    font-weight: bold;
+}
+
+.card-txt-2 {
+    font-size: 0.8rem;
+}
+
+.container-text {
+    width: 100%;
+    height: 80%;
+}
+
+button {
+    background-color:  #91ca53;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5%;
+}
+
+button:hover {
+    background-color: #84bc49;
+    cursor: pointer;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-text {
+    text-align: justify;
+}

@@ -1,0 +1,55 @@
+
+.flex {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;  
+    /* faire ça au lieu des br */
+}
+
+.flex p {
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.flex1 {
+    flex: 1;
+    /* Pour faire un flex grow, le plus rapide est
+    d'utiliser flex: taille en grow */
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3; 
+}
+
+.flex > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange-grow {
+    background-color: orange;
+}
+
+.violet-grow {
+    background-color: violet;
+}
+
+.green-grow {
+    background-color: green;
+}
+
+.red-grow {
+    background-color: red;
+}
+
+.blue-grow {
+    background-color: blue;
+}

@@ -14,9 +14,13 @@ body {
   background-color: whitesmoke; 
   display: flex;
   justify-content: center;  /* centre horizontal */
-  align-items: center;      /* centre vertical */
+  align-items: center;      /* centre verticalement */
   height: 100vh;
 }
+
+/* pas besoin de mettre les 2 pour centrer */
+
+/* border-radius en PX */
 
  .card {
   position: relative;  

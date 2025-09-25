@@ -76,4 +76,8 @@ justify-content : center; (horizontal)
 
 
 
+# flex-grow s'adapte 
+
+flex-grow: 2; est 2 fois plus grand que 
+les autres.
 
