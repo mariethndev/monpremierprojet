@@ -1,0 +1,673 @@
+@font-face {
+    font-family: "Centra";
+    src: url("fonts/fonnts.com-Centra_No2.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Centra", sans-serif;
+    color: #0C0E1C;
+}
+
+/* BIG CONTAINER */
+
+.big-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* MENU DU HAUT */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: bisque;
+    padding: 20px;
+}
+
+.img-logo {
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+li {
+    list-style-type: none;
+}
+
+.rechercher > a {
+    display: inline;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.appli > button {
+    background-color: white;
+    border: 1px solid #1668E3;
+    border-radius: 25px;
+    padding: 10px;
+    color: #1668E3;
+    width: 110px;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+}
+
+/* INPUT */
+
+.eur {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 0.4rem;
+}
+ 
+.bg-white {
+    background-color: white;
+    background: url("img/bg-1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 10px;
+    border-radius: 25px;
+}
+ 
+
+.localisation > button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(186, 186, 186);
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.dates > button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(186, 186, 186);
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.voyageurs > button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(186, 186, 186);
+    font-weight: bold;
+    padding: 10px;
+    width: 180px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.bouton-rechercher > button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 25px;
+    border: 1px solid rgb(186, 186, 186);
+    font-weight: bold;
+    padding: 15px;
+}
+
+.connexion {
+    background-color: rgb(19, 19, 61);
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.flex-violet-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.flex-violet-start > img {
+    margin-right: 20px;
+    width: 40px;
+}
+
+.flex-violet-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-violet-end > button {
+   margin-right : 20px;
+}
+
+.badge-violet {
+    width: 60px;
+    height: 60px;
+}
+
+.connexion-btn {
+    background-color: rgb(18, 18, 58);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+ 
+/* SEJOURNER 10 NUITS ..  */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.design-card {
+    background-color: rgb(249, 241, 229);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.card-img > img {
+    width: 170px;
+    height: 195px;
+}
+
+/* PROMO D'AUTOMNE */
+
+.bg-promo {
+    background: url("img/promo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 620px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.automne {
+    background-color: rgb(249, 241, 229);
+    padding: 10px;
+    border-radius: 15px;
+    width: 260px;
+    position: absolute;
+    top: 420px;
+    left: 70px;
+}
+
+.automne > button {
+    background-color: rgb(18, 18, 58);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+/* COTE DAZUR */
+
+.cotedazur-flex > img {
+    width: 800px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+.cotedazur-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.text-flex > img {
+    height: 80px;
+    width: 120px;
+}
+
+.text-flex > h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-flex > p {
+    font-size: 0.7rem;
+}
+
+/* Découvrez votre nouvel hébergement préféré */
+
+.nouvel-heber {
+    position: relative;
+    width: 100%;
+}
+
+.heber-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+}
+
+.heber-img-1 > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.heber-img-1 > p {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.card-notes{
+    display: flex;
+    flex-direction: column;
+} 
+
+.box-notes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+    
+/* Découvrez votre nouvel hébergement préféré --> */
+
+.btn-offres {
+    background-color: rgb(12, 12, 44);
+    padding: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.btn-offres {
+    position: absolute;
+    left: 1030px;
+    top: 270px;
+}
+
+/* GRACE A L'APPLI */
+
+.flex-appli {
+    display: flex;
+    flex-direction: row;
+}
+
+.appli-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.appli-container > h2 {
+    margin-bottom: 10px;
+}
+
+.img-appli > img{
+    height: 260px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+
+.qr-code > img {
+    height: 140px;
+    width: 160px;
+}
+
+ul > li {
+    list-style: inside;
+    margin: 10px;
+}
+
+.appli-container > p {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.appli-container > a {
+    margin-top: 10px;
+    color: #1668E3;
+}
+
+/* NOTES ET PRIX */
+
+.container-prices {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.prix-barre {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 0.9rem;
+} 
+
+.text {
+    font-size: 0.8rem;
+}
+
+.membres {
+    background-color: #5E187E;
+    color: white;
+    padding: 10px;
+    width: 180px;
+    height: 15px;
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.double {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.double > p {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    height: 19px;
+    width: 25px;
+    text-align: center;
+    padding: 5px;
+}
+
+.prices-img-1 {
+    position: relative;
+}
+
+.badge-promo {
+    position: absolute;
+    top: 160px;
+    left: 3px;
+    margin-left: 10px;
+}
+
+.img-notes {
+    width: 230px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+/*Découvrez les hébergements dans les destinations populaires*/
+
+.card-destination {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.contain-card > img {
+    width: 400px;
+    height: 190px;
+    border-radius: 25px;
+}
+
+.destination > ul > li {
+    display: inline;
+    margin-bottom: 10px;    
+    padding: 10px;
+}
+
+.destination > ul > li > a {
+    color: black;
+}
+
+.tarifs > h2 {
+    margin-top: 20px;
+}
+
+.tarifs > p {
+    margin-bottom: 20px;
+}
+
+/* CARD OSTENDE ETC */
+
+ .red {
+    width: 20px;
+    height: 15px;
+    background-color: crimson;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+ }
+
+ .notes-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+ }
+
+/* DECOUVREZ LA COTE DAZUR */
+
+.img-hotels {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.img-hotels > img {
+    height: 100px;
+    width: 200px;
+}
+
+.flex-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.btn-pub {
+    background-color: rgb(244, 244, 244);
+    font-weight: bold;
+    color: rgb(21, 21, 74);
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 146px;
+    height: 40px;
+}
+
+.hotels-flex > button > img {
+    width: 20px;
+    height: 20px;
+} 
+
+.hotels > h2 {
+    font-weight: bold;
+}
+
+.hotels-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.hotels-flex img {
+    height: 90px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.text-hot-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.text-hotel {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.hotels {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* NATURE / GASTRONOMIE / ENDROIT A VOIR */
+
+.flex-nature {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 10px;
+    position: relative;
+}
+
+.nature {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* GRACE A LAPPLI */
+
+.flex-eco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.economie {
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.economie > a {
+    color: #1668E3;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: antiquewhite;
+    height: 100%;
+    padding: 150px;
+}
+ 
+.foot-1 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.foot-1 > p {
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.foot-1 > img {
+    height: 200px;
+    width: 150px;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    color: #000000;
+    text-align: left;
+}
+
+.img-foot {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.img-foot > img {
+    width: 150px;
+    height: 30px;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-foot {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-foot, .foot-1, .row-1 > a {
+    color: #1668E3;
+    margin-right: 20px;
+}
+
+.foot-1 > .footer-cgv {
+    text-align: center;
+    color: grey;
+    font-size: 0.8rem;
+}
