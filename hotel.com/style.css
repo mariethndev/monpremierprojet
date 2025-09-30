@@ -32,7 +32,7 @@ body {
     background-color: bisque;
     padding: 20px;
 }
-
+ 
 .img-logo {
     width: 200px;
     height: 200px;
@@ -396,6 +396,19 @@ ul > li {
     font-size: 0.9rem;
 } 
 
+.col-prix {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.col-prix > img {
+    position: absolute;
+    left: 115px;
+    bottom: 3px;
+}
+
 .text {
     font-size: 0.8rem;
 }
@@ -441,8 +454,8 @@ ul > li {
 }
 
 .img-notes {
-    width: 230px;
-    height: 200px;
+    width: 320px;
+    height: 220px;
     border-radius: 25px;
 }
 
@@ -610,13 +623,12 @@ ul > li {
 footer {
     background-color: antiquewhite;
     height: 100%;
-    padding: 150px;
+    padding: 120px;
 }
  
 .foot-1 {
     display: flex;
     flex-direction: column;
-    
 }
 
 .foot-1 > p {
