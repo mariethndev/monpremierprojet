@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carglass | Spécialiste de la réparation</title>
     <link rel="stylesheet" href="../carglass/style.css">
+    <link rel="shortcut icon" href="img/carglass_logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -13,6 +14,8 @@
         <img src="img/carglass_logo.png" alt="logo carglass">
         
         <div class="contact-box">
+            <img src="img/icon-tel.png" alt="icône de télépone">
+            
             <div class="contact">
                 <p>Contactez-nous</p>
             </div>
@@ -24,7 +27,7 @@
     </div>
 
     <nav>
-        <ul>
+        <ul class="li-nav">
             <li><a href="#">Nos Services</a></li>
             <li><a href="#">Choisir Carglass</a></li>
             <li><a href="#">Devis</a></li>
@@ -36,145 +39,277 @@
     <!-- HEADER -->
 
 <header>
-<div class="container">
-        <div class="container-impact">
-            <div class="impact">
-                <h4>Un impact, une fissure ou une vitre brisée ?</h4>
-                <input type="text" name="ville" placeholder="Code postal, ville">
-                <button>Prendre rendez-vous</button>
+    <div class="container">
+            <div class="container-impact">
+                <div class="impact">
+                    <h4>Un impact, une fissure ou une vitre brisée ?</h4>
+                    <button>Prendre rendez-vous</button>                  
+                    <div class="span-flex">
+                        <span class="line-red"></span>
+                        <span class="line-yellow"></span>
+                    </div>
+                </div>
+
+                <div class="rdv-tel wth-impact">
+                    <div class="rdv-txt flex-rdv">
+                        <h4>Vous pouvez aussi prendre rendez-vous par téléphone</h4>
+                        <p>(Prix d'un appel local)</p>
+                    </div>
+                    <div class="right-btn">
+                        <img src="img/logo-tel.png" alt="Icône tél">
+                        <button>09 77 40 19 27</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="rdv-tel wth-impact">
-                <div class="rdv-txt flex-rdv">
-                    <h4>Vous pouvez aussi prendre rendez-vous par téléphone</h4>
-                    <p>(Prix d'un appel local)</p>
-                </div>
-                 <div class="right-btn">
-                    <img src="img/logo-tel.png" alt="Icône tél">
-                    <button>09 77 40 19 27</button>
-                </div>
-            </div>
-        </div>
+        <!-- LES 3 ICONES NOIRES -->
 
-    <!-- LES 3 ICONES NOIRES -->
-
-    <div class="services">
-        <div class="img-srv">
-            <div class="img-row">
+        <div class="srv-flex">
+            <div class="img-srv">
                 <img src="img/argent-removebg-preview.png" alt="Argent">
-                <p>Rien à avancer</p>
-            </div>
-            <div class="img-row">
+                <div class="img-row">
+                    <p>Rien à avancer*</p>
+                    <p>Quel que soit votre assureur</p>
+                </div>
                 <img src="img/services-removebg-preview.png" alt="Argent">
-                <p>Déplacement gratuit *</p>
+                <div class="img-row">
+                    <p>Déplacement gratuit*</p>
+                    <p>Partout en France</p>
+                </div>
+                 <img src="img/badge-removebg-preview.png" alt="Argent">
+                <div class="img-row">
+                    <p>Garantie à vie*</p>
+                    <p>Toute intervention vitrage</p>
+                </div>
             </div>
-            <div class="img-row">
-                <img src="img/badge-removebg-preview.png" alt="Argent">
-                <p>Garantie à vie *</p>
-           </div>
-
         </div>
+    </header>
+
+    <!-- Un impact ? En 30 min c'est réparé -->
+
+        <div class="rapidement">
+            <div class="impact-1">
+                <img src="img/outils.jpg" alt="30 min">
+                <p>Pour tout impact réparé ou pare-brise remplacé** - Du 13 septembre au 3 octobre 2025</p>
+            </div>
+
+            <div class="impact-right">
+                <div class="img-30">
+                    <img src="img/30-minutes-removebg-preview.png" alt="30 minutes">
+                </div>
+
+                <h4>Un impact ? En 30 min c'est réparé</h4>
+                <p>Chez Carglass® on répare votre impact rapidement ! Prenez rendez-vous en ligne.</p>
+                <button>En savoir plus</button>
+            </div>
+        </div>
+
+<!-- Nos engagements -->
+    <div class="trait">
+        <span class="yellow-ctr"></span>
+        <span class="red-ctr"></span>
     </div>
- 
-</div>
-</header>
+    
+    <h2>Nos engagements</h2>
 
-<!-- Un impact ? En 30 min c'est réparé -->
-
-    <div class="rapidement">
-        <div class="impact-1">
-            <img src="img/outils.jpg" alt="30 min">
-            <p>Pour tout impact réparé ou pare-brise remplacé** - Du 13 septembre au 3 octobre 2025</p>
-        </div>
-
-        <div class="impact-right">
-            <div class="img-30">
-                <img src="img/30-minutes-removebg-preview.png" alt="30 minutes">
-            </div>
-
-            <h4>Un impact ? En 30 min c'est réparé</h4>
-            <p>Chez Carglass® on répare votre impact rapidement ! Prenez rendez-vous en ligne.</p>
+    <section class="engagements">
+        <div class="solution">
+            <img src="img/1.png" alt="Solution immédiate">
+            <h3>Solution immédiate Carglass</h3>
+            <p>Une vitre latérale ? Nos experts Carglass® vous trouveront une <b>solution immédiate</b> pour que vous puissiez reprendre la route rapidement !</p>
             <button>En savoir plus</button>
         </div>
-    </div>
-
-    <!-- Nos engagements -->
-
-    <div class="container-engagement">
-
-        <h2>Nos engagements</h2>
-
-        <div class="flex-enga">
-            <div class="enga-1">
-                <img src="img/1.jpg" alt="Solution immédiate">
-                <h4>Solution immédiate Carglass®</h4>
-                <p>Une vitre latérale ? Nos experts Carglass® vous trouveront <b>une solution immédiate</b> pour que vous puissiez reprendre la route rapidement !</p>
-                <button>En savoir plus</button>
-            </div>
-            <div class="enga-1">
-                <img src="img/sé.jpg" alt="Rien à avancer">
-                <h4>Rien à avancer</h4>
-                <p>Chez Carglass®, c’est simple ! Vous n’avez <b>rien à avancer(1)</b> quelle que soit votre assurance. Et c’est <b>0 franchise</b> pour la majorité de nos clients (2) !</p>
-                <button>En savoir plus</button>
-            </div>
-            <div class="enga-1">
-                <img src="img/3.jpg" alt="Déplacement gratuit">
-                <h4>Déplacement gratuit</h4>
-                <p><b>Nous intervenons là où vous le souhaitez, partout en France</b> (3), avec la même qualité de service qu’en centre. Toutes nos interventions vitrages sont garanties à vie</p>
-                <button>En savoir plus</button>
-            </div>
+        <div class="solution">
+            <img src="img/2.png" alt="Rien à avancer">
+            <h3>Rien à avancer</h3>
+            <p>Chez Carglass®, c’est simple ! Vous n’avez <b>rien à avancer</b><span class="paranth">(1)</span> quelle que soit votre assurance. Et c’est <b>0 franchise </b>pour la majorité de nos clients (2) !</p>
+            <button>En savoir plus</button>
         </div>
-    </div>
+        <div class="solution">
+            <img src="img/3.png" alt="Déplacement gratui">
+            <h3>Déplacement gratuit</h3>
+            <p><b>Nous intervenons là où vous le souhaitez, partout en France (3),</b> avec la même qualité de service qu’en centre. Toutes nos interventions vitrages sont garanties à vie.</p>
+            <button>En savoir plus</button>
+        </div>
+    </section>
 
 <!-- Les meilleures recommandations sont celles de nos clients -->
 
-  
-<!-- Trouvez votre centre Carglass® -->
+<h2>Les meilleures recommandations sont celles de nos clients</h2>
+
+<div class="stars">
+        
+        <div class="card cercle-stars">
+            <h2>4.8</h2>
+            <p>⭐⭐⭐⭐</p>
+            <img src="img/verified.png" alt="avis vérifié">
+        </div>
     
-    <h4 class="txt-h4">Trouvez votre centre Carglass®</h4>
+        <div class="card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“Parfait , respect des horaires , travail bien fait”</p>
+            <p><b>A. le 24/09/25</b></p>
+            <p>Intervention le 15/09/25</p>
+        </div>
+
+        <div class="card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“Bon accueil efficace et ponctuel”</p>
+            <p><b>Marie Eliette A. le 24/09/25</b></p>
+            <p>Intervention le 15/09/25</p>
+        </div>
+        
+        <div class="card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“Tres Bien”</p>
+            <p><b>Oscar Manuel F. le 24/09/25</b></p>
+            <p>Intervention le 15/09/25</p>
+        </div>
+</div>
+
+<div class="avis">
+    <button>Voir tous les avis</button>
+    <a href="#">Avis soumis à un contrôle</a>
+</div>
+
+
+<!-- Trouvez votre centre Carglass® -->
 
     <div class="trouver-votre-centre">
-            <div class="centre-flex">
-                <div class="centre-left">
-                    <img src="img/magasin.jpg" alt="Centre Carglass²">
-                </div>
-                <div class="centre-right">
-                    <h4>Plus de 850 centres d'intervention partout en France</h4>
-                    <p>Il y en a forcément un près de chez vous !</p>
-                    <button>Trouver un centre</button>
-                </div>  
+        <div class="centre-flex">
+            <div class="centre-left">
+                <img src="img/magasin.jpg" alt="Centre Carglass²">
             </div>
+            <div class="centre-right">
+                <h4>Plus de 850 centres d'intervention partout en France</h4>
+                <p>Il y en a forcément un près de chez vous !</p>
+                <button>Trouver un centre</button>
+            </div>  
+        </div>
     </div>
- 
+
+<!-- LE GRAND P -->
+
+<section class="paragraph">
+
+    <div class="para-1">
+        <p>
+        *Avance de frais constituant un délai de paiement de 20 jours (ou 30 jours si paiement par carte bancaire) à compter de la date d'intervention. Applicable uniquement aux frais pris en charge par l'assurance, à l'exclusion de toute franchise identifiée qui devra être payée comptant. Offre valable dans tous les centres Carglass® pour une réparation ou un remplacement de vitrage pris en charge par une assurance bris de glace, dans le respect du contrat souscrit par l'assuré. 
+        Pour toutes les interventions vitrage, en France métropolitaine, sauf Corse et îles non reliées par un pont, hors prestation de recalibrage.
+        Garantie valable pour les véhicules légers sur présentation de la facture ou autre justificatif, et conformément à nos conditions générales de vente disponibles ici.  
+        </p>
+        <a href="#">**Liste des centres Carglass® qui proposent le service : ici</a></a>
+    </div>
+
+    <div class="li-flex">
+        <li>(1) Si l’impact est plus petit qu’une pièce de 2€ et hors champ de vision du conducteur. </li>
+        <li>(2) Offre valable pour les assurés bris de glace, dans les centres agréés, réparation d’impact intégralement prise en charge, hormis une franchise éventuelle. </li>
+        <li>(3) Valable pour des réparations d’impacts sur un même pare-brise, le même jour et sur le même site d’intervention. </li>
+        <li>(4) Enquête Clients online NPS - Enquête interne Base : 17 393 clients Carglass® ayant fait réparer ou remplacer un vitrage chez Carglass® entre le 9 juillet et le 9 août 2024. Enquête en ligne réalisée du 22 juillet au 11 août 2024. Pour 92% des clients Carglass, Carglass est supérieur aux autres réparateurs vitrage sur la rapidité/efficacité de l’intervention.</li>
+        <li>(5) Garantie valable pour les véhicules légers sur présentation de la facture ou autre justificatif, et conformément à nos conditions générales de vente disponibles ici.   </li>
+        <li>(6) En cas d’indisponibilité de la pièce, Carglass® sécurise votre véhicule avec un vitrage temporaire. La pose du vitrage temporaire est offerte si le remplacement définitif du vitrage est effectué chez Carglass, sinon elle sera facturée. Contactez-nous pour connaitre le prix à date. </li>
+        <li>(7) Hors filtres non diagnostiqués et non vendus par Carglass® et placés dans des endroits sensibles. Demandez la liste des références disponibles en centre. </li>
+        <li>(8) Pour toutes les interventions vitrage, en France métropolitaine, sauf Corse et îles non reliées par un pont, hors prestation de recalibrage. </li>
+        <li>(9) Remplacement des optiques de phares et antibrouillards uniquement dans les centres du réseau Carglass® équipés pour ces prestations. </li>
+        <li>(10) Avance de frais constituant un délai de paiement de 20 jours (ou 30 jours si paiement par carte bancaire) à compter de la date d'intervention. Applicable uniquement aux frais pris en charge par l'assurance, à l'exclusion de toute franchise identifiée qui devra être payée comptant. Offre valable dans tous les centres Carglass® pour une réparation ou un remplacement de vitrage pris en charge par une assurance bris de glace, dans le respect du contrat souscrit par l'assuré.  </li>
+        <li>(11) Moyenne déterminée selon une étude interne réalisée sur l’année 2024 sur les appels décrochés. Source Octo +</li>
+    </div>
+
+</section>
+
+ <!-- LE PIED DE PAGE -->
+
 <footer>
-    <div class="footer-top">
-        <div>
-            <a href="#"></a>
+    <div class="footer-flex">
+        <div class="logo-footer">
+            <img src="img/carglass_logo.png" alt="logo carglass">
         </div>
         <div>
             <p>Quels que soient la marque ou le modèle de votre véhicule, si votre pare-brise a subi un impact, a cassé, fissuré ou si l’une de vos vitres doit être remplacée: Faites appel à Carglass®, spécialiste de la réparation d’impact (si l’impact est plus petit qu’une pièce de 2€ et hors champ de vision du conducteur), du remplacement pare-brise et autres types de vitrage automobile.</p>
         </div>
     </div>
 
-    <h3>Nos services</h3>
+    <div class="center-footer flex-row">
+        
+        <div class="services">
+            <h4>Nos services</h4>
+            <a href="#">Bris de glace</a>
+            <a href="#">Pare-brise</a>
+            <a href="#">Lunette arrière</a>
+            <a href="#">Vitre latérale</a>
+            <a href="#">Réparation de pare-brise</a>
+            <a href="#">Remplacement de pare-brise</a>
+            <a href="#">Remplacement des phares</a>
+            <a href="#">Balais d'essuie-glaces</a>
+            <a href="#">Carglass® Protect Anti Pluie et Moustiques</a>
+            <a href="#">Filtres d'habitacle</a>
+            <a href="#">Batteries</a>
+            <a href="#">Désinfection coffre et habitacle</a>
+        </div>
 
-<div class="footer-bottom">
+        <div class="a-propos">
+            <h4>A propos de Carglass</h4>
+            <a href="#">Qui sommes-nous ?</a>
+            <a href="#">Nos équipes</a>
+            <a href="#">Vision & valeurs</a>
+            <a href="#">Espace presse</a>
+            <a href="#">Développement Responsable</a>
+            <a href="#">Le blog Carglass</a>
+            <a href="#">Code éthique</a>
+            <a href="#">Carglass Recrute</a>
+            <a href="#">Service Europe</a>
+            <a href="#">Espace Fournisseurs</a>
+        </div>
 
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+        <div class="trouver">
+            <h4>Trouver un centre</h4>
+            <a href="#">Service à domicile</a>
+            <a href="#">Carglass Pare-brise Paris</a>
+            <a href="#">Carglass Pare-brise Lyon</a>
+            <a href="#">Carglass Pare-brise Toulouse</a>
+            <a href="#">Carglass Pare-brise Marseille</a>
+            <a href="#">Carglass Pare-brise Nantes</a>
+            <a href="#">Carglass Pare-brise Lille</a>
+            <a href="#">Carglass Pare-brise Grenoble</a>
+            <a href="#">Carglass Pare-brise Montpellier</a>
+            <a href="#">Carglass Pare-brise Perpignan</a>
+            <a href="#">Carglass Pare-brise Poitiers</a>
+            <a href="#">Tous les centres</a>
+        </div>
 
-<h4>Suivez-nous :</h4>
+        <div class="aide aide-col">
+            <h4>Besoin d'aide ?</h4>
+            <a href="#">Contactez-nous</a>
+            <a href="#">Questions fréquentes</a>
+            <a href="#">Sourds et malentendants</a>
+            <h4>Les avis clients</h4>
+            <img src="img/verified.png" alt="avis clients">
+        </div>
+    </div>
 
+    <div class="footer-bot">
+        <ul>
+            <a href="#">Charte vie privée</a>
+            <a href="#">Conditions d'utilisation du site</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Cookies</a>
+            <a href="#">Plan du site</a>
+            <a href="#">Gérer mes cookies</a>
+            <a href="#">Gérer cookie chat</a>
+        </ul>
+        
+        <div class="logotype">
+            <p>Suivez-nous:</p>
+            <a href="#"><img src="img/insta.png" alt=""></a>
+            <a href="#"><img src="img/icon-fb.png" alt="logo fb"></a>
+            <a href="#"><img src="img/x.png" alt="logo x"></a>
+            <a href="#"><img src="img/youtube.png" alt="logo youtube"></a>
+            <a href="#"><img src="img/in.png" alt="linkedin"></a>
+            <a href="#"><img src="img/tiktok.png" alt=""></a>
+        </div>
 
-<p>© CARGLASS® et son logotype sont des marques déposées de Belron Group S.C.A. et de ses filiales. </p>
-</div>
+        <p class="logotype-p">© CARGLASS® et son logotype sont des marques déposées de Belron Group S.C.A. et de ses filiales. </p>
+    </div>
 </footer>
 
 </body>
