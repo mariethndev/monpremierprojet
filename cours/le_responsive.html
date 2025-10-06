@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Responsive Design</title>
+    <link rel="stylesheet" href="../cours/css/responsive.css">
+</head>
+<body>
+    
+    <h1>Responsive Design</h1>
+    
+    <h2>Qu'est-ce que le Responsive Design ?</h2>
+
+    <p><b>Le Responsive Design</b> (ou design adaptatif) est une approche de conception web qui permet
+    à un site de <b>s'adapter automatiquement à la taille de l'écran.</b></p>
+    
+    <h2>Les breakpoints</h2>
+
+    <p> 
+        Un breakpoint est un seuil de <b>largeur</b> d'écran à partir duquel on modifie
+        l'apparence de la page web afin de l'adapté au support (mobile, tablette, dekstop).
+    </p>
+
+    <h3>Liste des breakspoints</h3>
+
+    <ul>
+        <li>Mobile => max-width : 480px (- ou égal à 480)</li>
+        <li>Tablette => max-width : 768px</li>
+        <li>Laptop (ordi portable) => max-width : 1024px </li>
+        <li>Desktop (Les tours) => min-width : 1025px</li>
+    </ul>
+
+    <h3 class="warning">Attention !!!</h3>
+
+    <p>La résolution des écrans en css (nb de px en largeur-hauteur) est représenté en pixel <b>logique</b>.</p>
+
+    <p>Dans la réalité, les appareils sont en pixel physique.</p>
+    <p>Par exemple: Un Iphone 13 a une résolution logique de 390 x 844 pixels mais en réalité, elle a une résolution 
+        physique de 2532 x 1170px. 
+    </p>
+    <p>Par exemple pour un écran Rétina, 3px physique pour 1px logique.</p>
+
+    <h2>Principe fondamentaux du Responsive Design</h2>
+
+    <p>Utilisation des <b>%</b> ou <b>vh/vw</b> au lieu de valeurs fixes comme le pixel.</p>
+    <p>Utiliser des propriétés tel que max-width: 100% pour que les images ne dépassent jamais de leur conteneur.</p>
+
+    <p>Les media queries => Ce sont des instructions qui appliquent des styles en fonction de la taille de l'écran. </p>
+
+    <p>Actuellement nous vivons dans un monde où les téléphones portables sont homis présents. Il est conseillé MAINTENANT de concevoir sont site en MOBILE FIRST</p>
+
+    <p>Qu'est ce que le mobile first ?</p>
+    <p>C'est un concept de web design optimisé pour le mobile, il consiste à concevoir un site en mettant <b>la priorité sur la version mobile</b> 
+    et ensuite d'adapter le site progressivement sur des écrans plus larges.</p>
+
+    <!-- penser au mobile first lors de la présentation du projet, le construire comme si c'était sur téléphone -->
+
+    <!-- Les media queries se mettent en-dessous dans le CSS -->
+
+    <h2>Les flexbox</h2>
+
+    <p>L'utilisation du wrap est maintenant très important.</p>
+
+    <div class="container">
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="box blue order1"></div>
+        <div class="box orange order2"></div>
+        <div class="box green order3"></div>
+        <div class="box blue order4"></div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

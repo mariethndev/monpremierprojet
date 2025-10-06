@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Silk";
+    src: url("fonts/SILKHEART.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Silk", sans-serif;
+}
+ 
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+}
+
+ 
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+a > img {
+    width: 30px;
+    height: 30px;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.btn-nav > button {
+    background-color: black;
+    border: 1px solid rgb(254, 246, 204);
+    border-radius: 25px;
+    color: rgb(254, 246, 204);
+    padding: 10px;
+    position: absolute;
+    right: 50px;
+    width: 150px;
+    bottom: 0;
+}
+
+.btn-nav {
+    position: relative;
+    top: 19px;
+}
+
+/* STAY TUNED */
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding-top: 10px;
+}
+
+.days {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 5rem;
+}
+
+.write-container > p {
+    text-align: center;
+    color: crimson;
+    margin-top: 250px;
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.color-txt {
+    color: orange;
+    opacity: 0.6;
+}
+
+.day > p {
+    color: grey;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.zero {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.zero > p {
+    color: grey;
+}
+
+.minutes {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.minutes > p {
+    color: grey;
+}
+
+.seconds {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.seconds > p {
+    color: grey;
+}
+
+h2 {
+    font-size: 3rem;
+}

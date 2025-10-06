@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+    z-index: 10;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    padding: 0.5rem 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+aside {
+    background: #f0f0f0;
+    padding: 1rem;
+}
+
+.left {
+    order: 2;
+}
+
+.right {
+    order: 3;
+}
+
+.left nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.left nav ul li {
+    background: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.left nav ul li:hover {
+    background: #ccc;
+}
+
+.cards {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    gap: 1rem;
+    max-width: 100%;
+    padding: 1rem;
+    /*flex-grow 1 => Tous les éléments font la meme taille */
+    /*flex-shrink 1 => vas réduire les éléments qui dépasse le flex basis*/
+    /*flex-basis 100% => Cette propriété détermine la taille du conteneur*/
+    /*flex 1 1 100%*/
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin:  0.5rem 0;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: calc(50% - 3rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        flex-direction: row;
+        width: 80%;
+        margin: 4rem auto ;
+    }
+
+    .left, .cards, .right {
+        order: unset;
+    }
+
+    .cards {
+        flex: 3
+    }
+
+    .left, right {
+        flex: 1;
+    }
+
+
+}

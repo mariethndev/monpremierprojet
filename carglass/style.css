@@ -655,5 +655,95 @@ footer {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 
 
+=======
+/* LES MEDIA QUERIES QUE JE DETESTE */
+
+@media screen and (max-width: 1024px) {
+  .impact-right, .impact-1, .solution {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .engagements {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stars {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* FINALEMENT CAVA J'AIME BIEN LES MEDIA QUERIES */
+
+
+
+  .rapidement {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .srv-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impact-1 {
+    margin: 10px;
+  }
+  .impact-1 > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* 700 PX JSP JE FAIS DES TESTS */
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .li-nav > li {
+    margin-bottom: 10px;
+  }
+
+  .rdv, .centre-flex, .stars {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cercle-stars {
+    position: static;
+    margin: 20px auto;
+  }
+}
+
+/* 500 PX */
+
+@media screen and (max-width: 500px) {
+  .impact {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .btn-vert {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .footer-flex, .center-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+>>>>>>> d3a0857 (Ajout du dernier projet à jour)

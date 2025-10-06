@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+}
+
+.card-img {
+    border: 0.5px solid grey;
+    padding: 10px;
+    width: 100%; 
+    max-width: 300px;
+    margin: 10px 0;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 228, 228);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.menu > a {
+    background-color: whitesmoke;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(193, 192, 192);
+    cursor: pointer;
+}
+
+.widget > h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 350px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+
+    .head > a {
+        margin: 0 10px;
+    }
+}

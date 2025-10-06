@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.sos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.film {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.film > h2 {
+    font-size: 2rem;
+}
+
+.film > button {
+    background-color: rgb(0, 255, 191);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.cards1 > img {
+    width: 60px;
+    height: 50px;
+}
+
+p, h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.bros {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+input[type="text"]{
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+
+input[type="submit"]{
+    background-color: aquamarine;
+    width: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+footer {
+    border-top: 1px solid grey;
+}
+
+textarea {
+    width: 280px;    
+    height: 60px;
+}
+
+.bros p {
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+}
+
+span {
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .sos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+    }
+
+    .film {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards1 > img {
+        width: 40px;
+        height: 30px;
+    }
+
+    .sezam {
+        display: block;
+        width: 50px;
+        height: 100px;
+    }
+ 
+    li {
+        display: none;
+    }
+}
+
+/* MOBILES */
+
+@media screen and (max-width: 980px){
+    .sos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+    }
+
+    .film {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards1 > img {
+        width: 40px;
+        height: 30px;
+    }
+
+    span {
+        display: block;
+    }
+ 
+    li {
+        display: none;
+    }
+}
